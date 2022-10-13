@@ -1,7 +1,6 @@
 <script lang="ts">
   import Menu from "$lib/menu/Menu.svelte";
   import MenuIcon from "$lib/menu/MenuIcon.svelte";
-  import Manifesto from "$lib/sections/manifesto.svelte";
 
   let panelOpen = false;
   let panelContent = "menu";
@@ -9,10 +8,9 @@
   let closeMenu = () => (panelOpen = false);
 </script>
 
-
 <div class="w-full h-0 fixed inset-0 flex flex-col justify-between z-50">
-  <div class="flex items-center justify-between p-2.5 md:p-5">
-    <img src="/dreamteam.svg" alt="dreamteam" width="200" />
+  <div class="flex items-center justify-between p-5 md:p-10">
+    <img src="/kenlogo.png" alt="kenlogo" width="80" />
 
     <button
       on:click={() => {
@@ -30,10 +28,8 @@
   </div>
 </div>
 
-<main class="space-y-48 xl:space-y-96">
+<div class = "w-full h-full fixed inset-0 flex flex-col object centered">
   
-  <Manifesto />
-
-</main>
+</div>
 
 <Menu open={panelOpen && panelContent === "menu"} {closeMenu} />
