@@ -1,7 +1,6 @@
 <script lang="ts">
   import Menu from "$lib/menu/Menu.svelte";
   import MenuIcon from "$lib/menu/MenuIcon.svelte";
-
   import Manifesto from "$lib/sections/manifesto.svelte";
 
   let panelOpen = false;
